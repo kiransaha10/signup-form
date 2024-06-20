@@ -1,0 +1,208 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+*,
+input {
+  font-family: "Poppins";
+}
+.container1 {
+  display: flex;
+  height: 100vh;
+}
+.hero-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.left-container {
+  display: flex;
+  width: 45%;
+}
+.right-container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  font-family: Poppins;
+  padding: 76px;
+  background: #ffffff;
+  align-items: center;
+  width: 55%;
+  overflow: hidden;
+  justify-content: center;
+}
+.main-heading {
+  box-sizing: border-box;
+  margin-top: 20px;
+  font-size: 48px;
+  font-weight: 500;
+  color: #043133;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.form-container {
+  display: flex;
+  border-radius: 8px;
+  align-items: center;
+  margin-top: 20px;
+  width: 90%;
+}
+.login-form {
+  width: 100%;
+}
+.input {
+  height: 48px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px 20px;
+  border-radius: 8px;
+  background-color: #eff0f2;
+  border: none;
+  margin-bottom: 30px;
+}
+.input-label {
+  font-size: 17px;
+  font-weight: 400;
+  color: #4d5959;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+input[type="text"]::placeholder {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: left;
+  color: #838383;
+}
+input[type="email"]::placeholder {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: left;
+  color: #838383;
+}
+input[type="password"]::placeholder {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: left;
+  color: #838383;
+}
+
+.action-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.create-account {
+  width: 260px;
+  height: 45px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 8px;
+  color: white;
+  background-color: #007074;
+  margin-top: 20px;
+  border: none;
+}
+.login-message {
+  margin-top: 20px;
+  color: #838383;
+  font-size: 15px;
+  font-family: Poppins;
+}
+.log-in {
+  text-decoration: none;
+  color: #007074;
+}
+.or {
+  font-family: Poppins;
+  font-size: 26px;
+  font-weight: 400;
+  color: #043133;
+  margin-top: 40px;
+}
+
+.signin {
+  display: flex;
+  justify-content: space-around;
+}
+.google {
+  width: 24px;
+  height: 24px;
+  padding-right: 4px;
+}
+.github {
+  width: 24px;
+  height: 24px;
+  padding-right: 4px;
+}
+.goggle-btn,
+.github-btn {
+  display: flex;
+  border-radius: 8px;
+  align-items: center;
+  background-color: white;
+
+  border: 1.4px solid #d2d2d2;
+  font-size: 12px;
+  width: 180px;
+  height: 40px;
+}
+.goggle-btn {
+  margin-right: 36px;
+}
+@media screen and (max-width: 1167px) {
+  .main-heading {
+    font-size: 40px;
+    font-weight: 500;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .main-heading {
+    font-size: 32px;
+    font-weight: 500;
+  }
+  .form-container {
+    width: 100%;
+  }
+  .right-container {
+    padding: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .left-container {
+    display: none;
+  }
+  .right-container {
+    width: 100%;
+    padding: 20px;
+  }
+  .main-heading {
+    font-size: 36px;
+    font-weight: 500;
+  }
+  .form-container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .form-container {
+    width: 100%;
+  }
+  .signin {
+    flex-direction: column;
+    padding-left: 40px;
+  }
+  .goggle-btn {
+    margin-bottom: 25px;
+    flex-direction: row-reverse;
+  }
+  .google {
+    padding-left: 5px;
+  }
+}
